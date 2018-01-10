@@ -2,13 +2,13 @@ package main
 
 import (
 	"log"
-	"time"
 	"strings"
+	"time"
 
 	"github.com/appleboy/gin-jwt"
 	"github.com/gin-gonic/gin"
 
-  "beardude_eventV2/dao"
+	"beardude_eventV2/dao"
 )
 
 func GetAuthMiddleware(Dao *dao.DAO) (j *jwt.GinJWTMiddleware) {

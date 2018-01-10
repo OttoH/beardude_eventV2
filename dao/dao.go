@@ -29,7 +29,6 @@ func (m *DAO) Connect() *mgo.Session {
 	}
 
 	db = session.DB(m.Database)
-  log.Println("DB connected")
 
 	return session.Clone()
 }
