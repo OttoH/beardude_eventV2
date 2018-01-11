@@ -1,7 +1,6 @@
 package main
 
 import (
-	"log"
 	"strings"
 	"time"
 
@@ -22,9 +21,7 @@ func GetAuthMiddleware(Dao *dao.DAO) (j *jwt.GinJWTMiddleware) {
 				return user, true
 			}
 
-			res, err := Dao.ValidateRacer(user, pwd)
-
-			if err != nil {
+			if res := Dao.ValidateRacer(user, pwd); res == true {
 				return user, true
 			}
 

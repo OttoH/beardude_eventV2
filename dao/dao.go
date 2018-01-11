@@ -41,11 +41,15 @@ func (m *DAO) CreateEvent(events *models.Events) error {
 
 
 // Racer
-func (m *DAO) ValidateRacer(user string, pwd string) (*models.Racer, error) {
+func (m *DAO) ValidateRacer(user string, pwd string) bool {
+	log.Println(user, pwd)
 	result := &models.Racer{}
-	err := db.C(RACER).Find(bson.M{"username": user, "pwd": pwd, "activate": 1}).One(result)
+	err := db.C(RACER).Find(bson.M{"username": user, "password": pwd, "activate": 1}).One(result)
+	if err == nil && len(result.Username) > 0 {
+		return true
+	}
 
-	return result, err
+	return false
 }
 
 func (m *DAO) GetRacerById(id string) (*models.Racer, error) {
