@@ -7,7 +7,7 @@ import (
 	"github.com/appleboy/gin-jwt"
 	"github.com/gin-gonic/gin"
 
-	"beardude_eventV2/dao"
+	"qpet-engine/dao"
 )
 
 func GetAuthMiddleware(Dao *dao.DAO) (j *jwt.GinJWTMiddleware) {

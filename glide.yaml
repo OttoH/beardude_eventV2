@@ -1,4 +1,4 @@
-package: beardude_eventV2
+package: qpet-engine
 import:
 - package: github.com/appleboy/gin-jwt
   version: v2.3.1

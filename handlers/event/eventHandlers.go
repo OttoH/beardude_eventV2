@@ -6,8 +6,8 @@ import (
   "net/http"
   "github.com/gin-gonic/gin"
 
-  "beardude_eventV2/dao"
-  "beardude_eventV2/models"
+  "qpet-engine/dao"
+  "qpet-engine/models"
 )
 
 type DepInj struct {

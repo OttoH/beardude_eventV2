@@ -14,10 +14,10 @@ dev:
 
 .PHONY: build
 build:
-	rm -rf ./bin/beardudev2
-	go build -o ./bin/beardudev2 main.go routers.go authMiddleware.go
+	rm -rf ./bin/qpetEngine
+	go build -o ./bin/qpetEngine main.go routers.go authMiddleware.go
 	GIN_MODE=release
-	./bin/beardudev2
+	./bin/qpetEngine
 
 .PHONY: mongo
 mongo:

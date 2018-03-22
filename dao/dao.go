@@ -6,7 +6,7 @@ import (
 	"gopkg.in/mgo.v2/bson"
 	"errors"
 
-	"beardude_eventV2/models"
+	"qpet-engine/models"
 )
 
 /* data access object */

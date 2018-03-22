@@ -4,9 +4,9 @@ import (
 	"github.com/appleboy/gin-jwt"
 	"github.com/gin-gonic/gin"
 
-	"beardude_eventV2/dao"
-	"beardude_eventV2/handlers/event"
-	"beardude_eventV2/handlers/racer"
+	"qpet-engine/dao"
+	"qpet-engine/handlers/event"
+	"qpet-engine/handlers/racer"
 )
 
 func SetupRouter(r *gin.Engine, dao *dao.DAO, authMiddleware *jwt.GinJWTMiddleware) *gin.Engine {

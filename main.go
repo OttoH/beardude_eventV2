@@ -3,8 +3,8 @@ package main
 import (
 	"github.com/gin-gonic/gin"
 
-	"beardude_eventV2/config"
-	"beardude_eventV2/dao"
+	"qpet-engine/config"
+	"qpet-engine/dao"
 )
 
 var cfg = &config.Config{}
